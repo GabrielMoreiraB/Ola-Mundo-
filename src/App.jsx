@@ -1,12 +1,20 @@
-import { useState } from 'react'
-console.log(window.location)
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Inicio from './paginas/Inicio';
+import SobreMim from "./paginas/SobreMim";
+import Menu from "./Menu";
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <div className="App">
-      
-    </div>
+    
+    <BrowserRouter>
+    <Menu/>
+      <Routes>
+        <Route path="/" element={<Inicio/>}/>
+        <Route path="/sobremim" element={<SobreMim/>}/>
+        <Route path="*" element={<div>Pagina não encontrada</div>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
