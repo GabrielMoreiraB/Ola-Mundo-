@@ -1,6 +1,11 @@
+import Banner from "../../components/Banner";
+
 const SobreMim = () => {
     return ( 
-        <div>Sobre mIM</div>
+        <main>
+            <Banner/>
+            <div>sobre mim</div>
+        </main>
      );
 }
  
