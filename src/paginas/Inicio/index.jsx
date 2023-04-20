@@ -5,8 +5,7 @@ import Post from "../../components/Post";
 
 const Inicio = () => {
     return ( 
-        <main>
-            <Banner/>
+        
             <ul className={styles.posts}>
                 {posts.map(post => (
                     <li key={post.id}>
@@ -14,7 +13,6 @@ const Inicio = () => {
                     </li>
                 ))}
             </ul>
-        </main>
         
      );
 }
