@@ -1,7 +1,7 @@
 import Banner from "../../components/Banner";
 import styles from './inicio.module.css';
 import posts from '../../json/posts.json'
-import Post from "../../components/Post";
+import PostCard from "../../components/PostCard";
 
 const Inicio = () => {
     return ( 
@@ -9,7 +9,7 @@ const Inicio = () => {
             <ul className={styles.posts}>
                 {posts.map(post => (
                     <li key={post.id}>
-                        <Post post={post} />
+                        <PostCard post={post} />
                     </li>
                 ))}
             </ul>
